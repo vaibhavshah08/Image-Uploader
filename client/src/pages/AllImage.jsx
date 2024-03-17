@@ -9,7 +9,7 @@ const AllImages = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch(`/api/image/getImages/${currentUser._id}`);
+        const response = await fetch(`/api/image/getImages/${currentUser._id}/`);
         if (response.ok) {
           const data = await response.json();
           console.log(data)
@@ -25,8 +25,10 @@ const AllImages = () => {
     fetchImages();
   }, [currentUser]);
 
-  
+  console.log(images)
   const images2 = images.filter(image => image.imageName.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  console.log(images2)
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
