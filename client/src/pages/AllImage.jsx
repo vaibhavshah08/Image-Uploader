@@ -55,7 +55,7 @@ const AllImages = () => {
         <div className="m-5 grid grid-cols-3 gap-4 p-5">
           {images2.map((image) => (
             <div key={image._id} className="flex flex-col items-center">
-              <img src={image.image} alt={image.imageName} className="w-full h-auto rounded-lg" />
+              <img src={image.image} alt={image.imageName} className="w-full h-60 rounded-lg" />
               <p className="mt-2 text-center">{image.imageName}</p>
             </div>
           ))}
