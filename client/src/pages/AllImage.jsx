@@ -8,17 +8,16 @@ const AllImages = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      try {
-        const response = await fetch(`/api/image/getImages/${currentUser._id}/`);
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data)
-          setImages(data.images);
-        } else {
-          console.error('Failed to fetch images:', response.status);
-        }
-      } catch (error) {
-        console.error('Error fetching images:', error);
+      const response = await fetch(`/api/image/getImages/${currentUser._id}`,{
+        method: 'POST'
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data)
+        setImages(data.images);
+      } else {
+        console.error('Failed to fetch images:', response.status);
       }
     };
 
