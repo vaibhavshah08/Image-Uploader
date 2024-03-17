@@ -13,7 +13,7 @@ export default function Header() {
           <Link to='/home'>
             <li>Home</li>  
           </Link>
-          <Link to='/about'>
+          <Link to='/'>
             <li>About</li>  
           </Link>
           <Link to='/profile'>
