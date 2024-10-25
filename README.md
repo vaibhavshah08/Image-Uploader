@@ -6,9 +6,9 @@ The front-end of the application is built with React, Tailwind CSS and uses Reac
 
 ### GCA Activation Parameters
 
-    | Parameter              | Type    | Possible Values                       | Description                                                |
-    |-----------------------|---------|--------------------------------------|------------------------------------------------------------|
-    | is_gca_enabled        | Boolean | true / false                         | Indicates whether GCA is enabled for the customer.         |
-    | gca_activation_status  | String  | NOT_STARTED, APPROVAL_PENDING, IN_PROGRESS, COMPLETED | Status of the GCA activation process for the customer.     |
+    | Parameter              | Type    | Possible Values                                        | Description                                                |
+    |------------------------|---------|--------------------------------------------------------|------------------------------------------------------------|
+    | is_gca_enabled         | Boolean | true / false                                           | Indicates whether GCA is enabled for the customer.         |
+    | gca_activation_status  | String  | NOT_STARTED, APPROVAL_PENDING, IN_PROGRESS, COMPLETED  | Status of the GCA activation process for the customer.     |
 
 
